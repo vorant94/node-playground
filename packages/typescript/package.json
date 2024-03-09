@@ -1,0 +1,21 @@
+{
+  "name": "@node-playground/typescript",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "clean": "shx rm -rf dist",
+    "build": "yarn clean && tsc",
+    "tsc": "tsc",
+    "format:check": "prettier . --check",
+    "format:fix": "prettier . --write",
+    "prettier": "prettier",
+    "tsx": "tsx"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "shx": "^0.3.4",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.2"
+  }
+}
