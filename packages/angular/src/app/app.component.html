@@ -1,0 +1,11 @@
+<div class="routes">
+  @for (route of routes; track route) {
+    <a [routerLink]="route.path">
+      {{ route.path }}
+    </a>
+  }
+</div>
+
+<hr />
+
+<router-outlet />

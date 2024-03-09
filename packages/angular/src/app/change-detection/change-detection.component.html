@@ -1,0 +1,24 @@
+<p>inside itself</p>
+<button (click)="countInsideItself()">count {{ insideItself.counter }}</button>
+
+<p>inside child</p>
+<div class="case">
+  <app-change-detection-child
+    [state]="insideChildWithOutput"
+    (count)="countInsideChildWithOutput()" />
+
+  <button (click)="countInsideChildWithOutput()">
+    parent {{ insideChildWithOutput.counter }}
+  </button>
+</div>
+
+<p>inside child push</p>
+<div class="case">
+  <app-change-detection-child
+    [state]="insideChildPush"
+    (count)="countInsideChildPush()" />
+
+  <button (click)="countInsideChildPush()">
+    parent {{ insideChildPush.counter }}
+  </button>
+</div>
