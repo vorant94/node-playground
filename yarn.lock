@@ -5,12 +5,22 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
+"@node-playground/node@workspace:packages/node":
+  version: 0.0.0-use.local
+  resolution: "@node-playground/node@workspace:packages/node"
+  dependencies:
+    prettier: "npm:^3.2.4"
+    prettier-plugin-organize-imports: "npm:^3.2.4"
+    typescript: "npm:^5.3.3"
+  languageName: unknown
+  linkType: soft
+
 "husky@npm:^8.0.0":
   version: 8.0.3
   resolution: "husky@npm:8.0.3"
   bin:
     husky: lib/bin.js
-  checksum: 6722591771c657b91a1abb082e07f6547eca79144d678e586828ae806499d90dce2a6aee08b66183fd8b085f19d20e0990a2ad396961746b4c8bd5bdb619d668
+  checksum: 10c0/6722591771c657b91a1abb082e07f6547eca79144d678e586828ae806499d90dce2a6aee08b66183fd8b085f19d20e0990a2ad396961746b4c8bd5bdb619d668
   languageName: node
   linkType: hard
 
@@ -19,21 +29,8 @@ __metadata:
   resolution: "node-playground@workspace:."
   dependencies:
     husky: "npm:^8.0.0"
-    pinst: "npm:^3.0.0"
-    prettier: "npm:^3.2.4"
-    prettier-plugin-organize-imports: "npm:^3.2.4"
-    typescript: "npm:^5.3.3"
   languageName: unknown
   linkType: soft
-
-"pinst@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "pinst@npm:3.0.0"
-  bin:
-    pinst: bin.js
-  checksum: abb1ed62ea2acb2207a7a860715bdb26ecbde74ede8fad5f6200194f3e22db25e2b7a49af05e5cc7fc05384709c651e0000323f0077d7239060c4b68c8acd428
-  languageName: node
-  linkType: hard
 
 "prettier-plugin-organize-imports@npm:^3.2.4":
   version: 3.2.4
@@ -48,7 +45,7 @@ __metadata:
       optional: true
     "@volar/vue-typescript":
       optional: true
-  checksum: c20afa9b379106839a273d53c83fef70920e8ae86939d4890a06c63da19440de411568793e716bafcdd96e5ba8e34233f2944ea53ecd6ac18ba1ec0fa05bb58b
+  checksum: 10c0/c20afa9b379106839a273d53c83fef70920e8ae86939d4890a06c63da19440de411568793e716bafcdd96e5ba8e34233f2944ea53ecd6ac18ba1ec0fa05bb58b
   languageName: node
   linkType: hard
 
@@ -57,7 +54,7 @@ __metadata:
   resolution: "prettier@npm:3.2.4"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 88dfeb78ac6096522c9a5b81f1413d875f568420d9bb6a5e5103527912519b993f2bcdcac311fcff5718d5869671d44e4f85827d3626f3a6ce32b9abc65d88e0
+  checksum: 10c0/88dfeb78ac6096522c9a5b81f1413d875f568420d9bb6a5e5103527912519b993f2bcdcac311fcff5718d5869671d44e4f85827d3626f3a6ce32b9abc65d88e0
   languageName: node
   linkType: hard
 
@@ -67,7 +64,7 @@ __metadata:
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: e33cef99d82573624fc0f854a2980322714986bc35b9cb4d1ce736ed182aeab78e2cb32b385efa493b2a976ef52c53e20d6c6918312353a91850e2b76f1ea44f
+  checksum: 10c0/e33cef99d82573624fc0f854a2980322714986bc35b9cb4d1ce736ed182aeab78e2cb32b385efa493b2a976ef52c53e20d6c6918312353a91850e2b76f1ea44f
   languageName: node
   linkType: hard
 
@@ -77,6 +74,6 @@ __metadata:
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 1d0a5f4ce496c42caa9a30e659c467c5686eae15d54b027ee7866744952547f1be1262f2d40de911618c242b510029d51d43ff605dba8fb740ec85ca2d3f9500
+  checksum: 10c0/1d0a5f4ce496c42caa9a30e659c467c5686eae15d54b027ee7866744952547f1be1262f2d40de911618c242b510029d51d43ff605dba8fb740ec85ca2d3f9500
   languageName: node
   linkType: hard

@@ -1,0 +1,15 @@
+{
+  "name": "@node-playground/node",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "format:check": "prettier . --check",
+    "format:fix": "prettier . --write",
+    "prettier": "prettier"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.4",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "typescript": "^5.3.3"
+  }
+}

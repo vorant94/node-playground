@@ -1,20 +1,17 @@
 {
   "name": "node-playground",
-  "packageManager": "yarn@4.0.2",
   "type": "module",
+  "private": true,
+  "packageManager": "yarn@4.1.1",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "format:check": "prettier . --check",
-    "format:fix": "prettier . --write",
-    "prettier": "prettier",
-    "postinstall": "husky install",
-    "prepack": "pinst --disable",
-    "postpack": "pinst --enable"
+    "prepare": "husky install",
+    "format:check": "yarn workspaces foreach --all -vp -j unlimited run format:check",
+    "format:fix": "yarn workspaces foreach --all -vp -j unlimited run format:fix"
   },
   "devDependencies": {
-    "husky": "^8.0.0",
-    "pinst": "^3.0.0",
-    "prettier": "^3.2.4",
-    "prettier-plugin-organize-imports": "^3.2.4",
-    "typescript": "^5.3.3"
+    "husky": "^8.0.0"
   }
 }
